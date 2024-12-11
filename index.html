@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="shortcut icon" type="image/png" href="images/icon.png" />
+    <title>My Hero Academia Experience</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body src="images/background.png" id="back">
+    <div class="top-div">
+      <div class="boxA center-content">
+        <img
+          src="images/Back page arro.png"
+          class="clickable2"
+          onclick="changeBakugou()"
+          id="arrowleft"
+        />
+      </div>
+      <div class="boxB center-content">
+        <img
+          src="images/My-Hero-Academia-Logo.png"
+          class="clickable2"
+          id="logo"
+          onclick="playLogoAudio()"
+        />
+      </div>
+      <div class="boxC center-content">
+        <img
+          src="images/Next page arrow.png"
+          class="clickable2"
+          onclick="changeDeku()"
+          id="arrowright"
+        />
+      </div>
+    </div>
+    <div class="middle-div">
+      <div class="boxD center-content">
+        <img
+          src="images/Bakugo.png"
+          class="clickable2"
+          id="person1"
+          onclick="playAudio()"
+        />
+      </div>
+      <div class="boxE center-content">
+        <iframe
+          width="100%"
+          height="100%"
+          src="https://www.youtube.com/embed/mcSdy6sylSg?si=sH-0CIaGNGoFjEad"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen
+          id="vid"
+        >
+        </iframe>
+      </div>
+      <div class="boxF center-content">
+        <img
+          src="images/Shigaraki.png"
+          class="clickable2"
+          id="person2"
+          onclick="playAudio2()"
+        />
+      </div>
+    </div>
+
+    <div class="bottom-div">
+      <div class="boxG center-content">
+        <p class="custom-font" id="pText1">
+          Bakugo Katsuki is a character from My Hero Academia, created by Kohei
+          Horikoshi. He’s one of the main characters and a student at U.A. High
+          School, training to become a professional hero. Bakugo is known for
+          his fiery personality, explosive quirk, and fierce ambition.
+        </p>
+      </div>
+      <div class="boxH center-content">
+        <p class="custom-font" id="pText2">
+          Shigaraki Tomura is one of the main antagonists in My Hero Academia
+          and the leader of the League of Villains. He is a highly dangerous and
+          complex character, known for his ruthless nature, powerful Quirk, and
+          dark backstory. Shigaraki serves as one of the primary threats to both
+          the heroes and society in the world of My Hero Academia.
+        </p>
+      </div>
+    </div>
+
+    <audio src="sounds/SMASH2.wav" type="audio/wav" id="SMASH"></audio>
+    <audio
+      src="sounds/CHOKE ON MY SMOKE!!!.wav"
+      type="audio/wav"
+      id="SMOKE"
+    ></audio>
+    <audio src="sounds/TODORONI.wav" type="audio/wav" id="FIRE"></audio>
+    <audio src="sounds/Shiga.wav" type="audio/wav" id="DECAY"></audio>
+    <audio src="sounds/Toga.wav" type="audio/wav" id="KNIFE"></audio>
+    <audio src="sounds/Dabi.wav" type="audio/wav" id="BFIRE"></audio>
+    <audio src="sounds/click.wav" type="audio/wav" id="click"></audio>
+    <audio src="sounds/Opening MHA.mp3" type="audio/mp3" id="OPENING"></audio>
+    <script src="script.js"></script>
+  </body>
+</html>

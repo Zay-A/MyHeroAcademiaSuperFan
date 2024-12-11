@@ -1,0 +1,196 @@
+@import url("https://fonts.googleapis.com/css2?family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap");
+
+body {
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  display: block;
+  background-image: url("images/background.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100vw;
+}
+p {
+  padding: 2%;
+}
+.boxA,
+.boxC {
+  width: 25%;
+  height: 100%;
+}
+.boxB {
+  width: 50%;
+  height: 100%;
+}
+
+.boxD,
+.boxF {
+  height: 100%;
+  width: 25%;
+}
+.boxE {
+  width: 50%;
+  height: 100%;
+}
+.boxG,
+.boxH {
+  height: 100%;
+  width: 50%;
+}
+/* https://www.w3schools.com/cssref/css3_pr_flex-wrap.php */
+.top-div {
+  height: 25%;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.middle-div {
+  height: 50%;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.bottom-div {
+  height: 25%;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.center-content {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+img {
+  max-height: 100%;
+  max-width: 100%;
+}
+.custom-font {
+  font-family: "Sour Gummy", sans-serif;
+  color: red;
+}
+.clickable2 {
+  filter: brightness(85%) drop-shadow(2px 8px 3px);
+  transition: transform 0.4s ease;
+}
+.clickable2:hover {
+  cursor: pointer;
+  transform: scale(1.04);
+  transition: transform 0.4s ease;
+}
+.clickable2:active {
+  filter: drop-shadow(0px 0px 3px);
+  transform: scale(0.98);
+  transition: transform 0.4s ease;
+}
+.pressed {
+  filter: drop-shadow(0px 0px 3px);
+  transform: scale(0.98);
+}
+/* colors */
+.green {
+  background-color: #008d24;
+}
+.light_blue {
+  background-color: #0b69c0;
+}
+.purple {
+  background-color: #3a246d;
+}
+.red {
+  background-color: #ca1b22;
+}
+.orange {
+  background-color: #ea6626;
+}
+.black {
+  background-color: #000000;
+}
+.white {
+  background-color: #ffffff;
+}
+.light-grey {
+  background-color: #a9a9a9;
+}
+.dark-grey {
+  background-color: #707070;
+}
+.yellow {
+  background-color: yellow;
+}
+.pink {
+  background-color: pink;
+}
+.blue {
+  background-color: blue;
+}
+.teal {
+  background-color: aqua;
+}
+img:hover {
+  cursor: pointer;
+}
+
+@media (max-width: 700px) {
+  .bottom-div {
+    display: none;
+  }
+  .boxA {
+    order: 2;
+    flex-wrap: wrap;
+  }
+  .boxB {
+    order: 2;
+    flex-wrap: wrap;
+  }
+  .boxC {
+    order: 3;
+    flex-wrap: wrap;
+  }
+  .boxF {
+    width: 50%;
+    height: 50%;
+  }
+  .boxD {
+    width: 50%;
+    height: 50%;
+  }
+  .boxE {
+    width: 100%;
+    order: -1;
+  }
+}
+@media (max-width: 500px) {
+  .boxF {
+    width: 50%;
+    height: 50%;
+  }
+  .boxD {
+    width: 50%;
+    height: 50%;
+  }
+  .boxE {
+    width: 100%;
+    order: -1;
+  }
+  .boxA {
+    order: 2;
+    width: 50%;
+    height: 50%;
+    flex-wrap: wrap;
+  }
+  .boxB {
+    height: 50%;
+    width: 100%;
+    order: -1;
+    flex-wrap: wrap;
+  }
+  .boxC {
+    order: 3;
+    width: 50%;
+    height: 50%;
+    flex-wrap: wrap;
+  }
+}
