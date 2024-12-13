@@ -1,3 +1,3 @@
 # MyHeroAcademiaSuperFan
-I built a MHA superfan site with responsive and interactive designs
-the user feels full of joy and happiness when it responds
+I built a MHA superfan site with HTML CSS and JS to show people how cool My Hero Academia is.
+Im a big fan of superfan site
